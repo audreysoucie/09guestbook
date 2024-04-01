@@ -1,6 +1,24 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
-.container{
-    width: 100%;
+
+body{
+    margin: 5rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+
+}
+
+
+form{
+    margin-bottom: 3rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+
 }

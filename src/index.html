@@ -12,43 +12,28 @@
 
   <body>
     <!-- Your HTML goes here -->
-    <div class="container mb-3">
-    <h1>Guest Book</h1>
-    <form id="myForm" class="d-none" method="post">
+    <h1>Guest <i class="bi bi-book-half"></i> Book</h1>
+    <form id="myForm" method="post">
       <div class="mb-3">
-        <label for="fname" class="form-label">First Name</label>
+        <label for="fname" class="form-label"><strong>First Name</strong></label>
         <input type="text" class="form-control" id="fname">
       </div>
       <div class="mb-3">
-        <label for="lname" class="form-label">Last Name</label>
+        <label for="lname" class="form-label"><strong>Last Name</strong></label>
         <input type="text" class="form-control" id="lname">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="button" class="btn btn-danger">Cancel</button>
+      <button type="button" class="btn btn-danger to-cancel">Cancel</button>
     </form>
-</div>
 
   <div class="book">
-    <h1>Registered Guests</h1>
-
+    <div class="top">
+    <h2>Registered Guests</h2>
+    <button type="button" class="btn btn-danger" id="clear">Clear All</button>
+  </div>
     <table class="table">
-      <thead>
-        <tr>
-          <th scope="col"><bold>First Name</bold></th>
-          <th scope="col"><bold>Last Name</bold></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-        </tr>
-      </tbody>
-    </table>
+        <table class ="table" id="names"></table>
+      </table>
   </div>
 
 
